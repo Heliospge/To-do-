@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { Task } from "../types";
 import TaskComponent from "./Task"
 import './TaskList.css'
+import { CirclePlus } from "lucide-react";
 
 
 
@@ -40,7 +41,7 @@ function DeleteTask(id: number) {
 
         <div className="input-row">
             <input type="text" value={NewTask} onChange={e => setNewTask(e.target.value)}  />
-            <button onClick={() => AddTask(NewTask)}></button>
+            <button onClick={() => AddTask(NewTask)}> <CirclePlus size={16} /></button>
         </div>
 
         <ul>

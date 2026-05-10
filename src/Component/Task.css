@@ -22,3 +22,17 @@
 .task-card button:hover {
   color: #333;
 }
+
+.task-buttons {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.task-buttons .delete-btn:hover {
+  color: red;
+}
+
+.task-buttons .edit-btn:hover {
+  color: rgb(0, 17, 255);
+}
