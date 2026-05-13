@@ -11,3 +11,25 @@ export interface TaskProps {
   EditTaskName: (id: number, newName: string) => void
   DeleteTask: (id: number) => void// à toi de compléter la signature
 }
+
+export interface Food {
+  id: number;
+  name: string;
+  quantité: number;
+  calorieCal: number;
+
+}
+
+export interface FoodResult {
+  product_name : string;
+  nutriments: {
+    'energy-kcal_100g': number
+  }
+}
+
+export interface Meal {
+  id: number;
+  name: string;
+  calorieMoy: number;
+
+}
