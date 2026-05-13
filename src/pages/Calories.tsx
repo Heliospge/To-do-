@@ -7,7 +7,7 @@ import { Fragment } from 'react'
 
 export default function Calories() {
 
-    const { results, loading, search } = useOpenFoodFacts()
+    const { results, search } = useOpenFoodFacts()
 
     const [searchTerm, setSearchTerm] = useState('')
 
